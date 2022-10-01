@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Consultar Salud</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">Consultar Datos Salud</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-2">Busqueda por Centros de Servicio, por Doctores o Pacientes.</h2>
+                        <p class="text-white-50 "> Este programa fue diseñado por Hernan Yessid Murcia Salinas</p>
+                        <p class="text-white-50 mx-auto mt-2 mb-4">Oprima el boton "Consultar!" para iniciar la consulta </p>
+
+                        <p class="text-white-50 ">Consultar Seleccionando Paciente: </p>
+                        <form action="paciente.jsp" method="POST" >
+                            <select name="namePaciente">
+                                <option value="----" selected></option>
+                                <option value="Jose">Jose Pineda</option>
+                                <option value="Eliana">Eliana Pineda</option>
+                                <option value="Estiven">Estiven Murcia</option>
+                                <option value="Javier">Javier Moreno</option>
+                                <option value="Guillermo">Guillermo Moreno</option>
+                                <option value="Esmeralda">Esmeralda Salinas</option>
+                            </select>
+                            <input type="submit" value="Consultar!">
+                        </form>
+                        <p class=" mt-2 mb-4"> </p>
+                        <p class="text-white-50 ">Consultar por Doctor: </p>
+                        <form action="doctor.jsp" method="POST" >
+                            <select name="nameDoctor">
+                                <option value="----" selected></option>
+                                <option value="Dr1">Dra Meiken Merchan</option>
+                                <option value="Dr2">Dr Augusto Cardenas</option>
+                                <option value="Dr3">Dra Pilar Hurtado</option>
+                                <option value="Dr4">Dra Alexandra Arevalo</option>
+                                <option value="Dr5">Dr Cesar Cardenas</option>
+                            </select>
+                            <input type="submit" value="Consultar!">
+                        </form>
+
+                        <p class=" mt-2 mb-4"> </p>
+                        <p class="text-white-50 ">Consultar por Centro de Servicio(Hospital,Clinica o Centro de Salud): </p>
+                        <form action="institucion.jsp" method="POST" >
+                            <select name="nameSalud">
+                                <option value="----" selected></option>
+                                <option value="Clinica">Clinica Colsubsidio</option>
+                                <option value="Hospital">Hospital Reginal</option>
+                                <option value="CentroDeSalud">Centro de Salud ESE San Miguel</option>
+                            </select>
+                            <input type="submit" value="Consultar!">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>
